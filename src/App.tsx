@@ -8,14 +8,14 @@ import TopBar from "./components/TopBar";
 
 function App() {
   return (
-      <>
+      <div className="app">
           <BrowserRouter>
               <TopBar/>
               <Switch>
                   <Route path={Routes.HOME_ROUTE} component={HomePage}/>
               </Switch>
           </BrowserRouter>
-      </>
+      </div>
   );
 }
 
