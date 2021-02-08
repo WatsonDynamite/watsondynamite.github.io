@@ -1,4 +1,6 @@
-@import 'variables';
+@import 'base/variables';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/fonts';
 
-@import '/screens/app';
 @import '/screens/homepage';

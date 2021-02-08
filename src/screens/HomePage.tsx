@@ -1,6 +1,9 @@
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import {SiDiscord, SiGmail, SiItchDotIo} from 'react-icons/si';
 
 import profilePic from '../assets/images/watson.jpg';
+
 
 function HomePage() {
     return(
@@ -21,21 +24,24 @@ function HomePage() {
             </div>
             <div className="homePage__subheader">
                 <h2>Contacts</h2>
-                <h6>Feel free to contact me!</h6>
+                <h4>Feel free to contact me!</h4>
                 <ul>
                     <li>
-                        <span><span>Email: </span> jrld98@gmail.com</span>
+                        <SiGmail/> <span>jrld98@gmail.com</span>
                     </li>
                     <li>
-                        <span><span>Linkedin: </span> linkedin.com/in/joão-dias-a6493119b</span>
+                        <FaLinkedin/> <span><a>linkedin.com/in/joão-dias-a6493119b</a></span>
                     </li>
                     <li>
-                        <span><span>itch.io: </span>  https://itch.io/profile/watsondynamite</span>
+                        <SiItchDotIo/>  <span><a>https://itch.io/profile/watsondynamite</a></span>
                     </li>
                     <li>
-                        <span><span>Discord :</span> Watson Dynamite#2323</span>
+                        <SiDiscord/> Watson Dynamite#2323
                     </li>
                 </ul>
+            </div>
+            <div className="homePage__projects">
+                <h1>Projects</h1>
             </div>
         </div>
     )

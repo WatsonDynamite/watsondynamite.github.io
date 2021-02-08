@@ -3,12 +3,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+
+    > * {
+        padding: 0 30px;
+        color: white;
+        font-family: $font-aesymatt;
+    }
 
     &__banner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
 
         > img {
             width: 400px;
@@ -20,6 +29,7 @@
             width: 65%;
             display: flex;
             flex-direction: column;
+            font-family: $font-aesymatt;
 
             > * {
                 color: white;
@@ -29,17 +39,78 @@
                 font-size: 80px;
             }
 
-            > h4 {
-                white-space: pre-line;
+            > h2 {
+                margin-bottom: 20px;
+                margin-left: 140px;
+            }
+
+            &__aboutme {
+                > h4 {
+                    font-size: 22px;
+                    margin-left: 20px;
+                    margin-bottom: 5px;
+                    white-space: pre-line;
+                    font-family: $font-aesymatt;
+                    font-weight: lighter;
+                }
             }
         }
     }
 
     &__subheader {
-        width: 100%;
-        padding: 0 30px;
-        background-color: $color-bordeaux-main;
+        width: calc(100vw - 60px);
+        padding: 10px 30px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: $color-green-main;
+        color: white;
+
+        > * {
+            width: 100%;
+            font-family: $font-wide-pixel;
+            letter-spacing: 1px;
+        }
+
+        > h2 {
+            font-size: 30px;
+        }
+
+        > h4 {
+            margin-bottom: 15px;
+        }
+
+        > ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            font-family: $font-aesymatt;
+
+            > li {
+                display: flex;
+                align-items: center;
+
+                > svg {
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+    }
+
+    &__projects {
+        background-color: $color-black-main;
+        display: flex;
+        flex-direction:  column;
+        justify-content: flex-start;
+        width: calc(100vw - 80px);
+        padding: 40px;
+
+        > h6 {
+            margin-left: 40px;
+        }
     }
 }

@@ -8,7 +8,7 @@ import TopBar from "./components/TopBar";
 
 function App() {
   return (
-      <div className="app">
+      <div>
           <BrowserRouter>
               <TopBar/>
               <Switch>
