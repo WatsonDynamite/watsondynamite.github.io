@@ -1,0 +1,57 @@
+.MuiDialog-paper {
+    width: 90vw !important;
+    max-width: unset !important;
+}
+
+.project-modal {
+    display: flex;
+    justify-content: center;
+
+    &__card {
+        width: 80px;
+        border: 80px solid transparent;
+        border-image: url('../../images/border-round.png') 90 round;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    &__modal {
+        padding: 0 30px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 80px solid transparent;
+        border-image: url('../../images/border-round.png') 90 round;
+
+        &__image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+
+        &__title {
+            font-size: 50px;
+            font-family: $font-aesymatt;
+            color: white;
+        }
+
+        > * {
+            white-space: pre-line;
+            font-size: 25px;
+            font-family: $font-minecraftia;
+            line-height: 35px;
+        }
+
+        > img {
+            width: 40%;
+            height: auto;
+        }
+
+         &__text {
+             display: block;
+             color: white;
+             margin-bottom: 50px;
+        }
+    }
+}
