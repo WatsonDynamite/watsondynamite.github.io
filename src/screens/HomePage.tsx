@@ -5,6 +5,7 @@ import { SiGmail, SiItchDotIo } from 'react-icons/si';
 import profilePic from '../assets/images/watson.jpg';
 import ProjectModal from '../components/ProjectModal';
 import { FragmentalCard, FragmentalContent } from "../components/pages/Fragmental";
+import {MetroidCard, MetroidContent} from "../components/pages/Metroid";
 
 
 function HomePage() {
@@ -60,29 +61,9 @@ function HomePage() {
                         <FragmentalContent />
                     </ProjectModal>
                     <ProjectModal
-                        cardChildren={<FragmentalCard />}
+                        cardChildren={<MetroidCard />}
                     >
-                        <FragmentalContent />
-                    </ProjectModal>
-                    <ProjectModal
-                        cardChildren={<FragmentalCard />}
-                    >
-                        <FragmentalContent />
-                    </ProjectModal>
-                    <ProjectModal
-                        cardChildren={<FragmentalCard />}
-                    >
-                        <FragmentalContent />
-                    </ProjectModal>
-                    <ProjectModal
-                        cardChildren={<FragmentalCard />}
-                    >
-                        <FragmentalContent />
-                    </ProjectModal>
-                    <ProjectModal
-                        cardChildren={<FragmentalCard />}
-                    >
-                        <FragmentalContent />
+                        <MetroidContent />
                     </ProjectModal>
                 </div>
             </div>

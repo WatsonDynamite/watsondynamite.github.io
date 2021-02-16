@@ -236,16 +236,34 @@ table {
   max-width: unset !important;
 }
 
+.MuiDialog-paper::-webkit-scrollbar {
+  display: none;
+}
+
 .project-modal {
   display: flex;
   justify-content: center;
 }
 .project-modal__card {
-  width: 80px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border: 80px solid transparent;
   border-image: url("../../images/border-round.png") 90 round;
   cursor: pointer;
   margin-bottom: 30px;
+}
+.project-modal__card > img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+.project-modal__card > h3 {
+  margin-top: 5px;
+  font-size: 50px;
 }
 .project-modal__modal {
   padding: 0 30px;
@@ -256,10 +274,39 @@ table {
   border: 80px solid transparent;
   border-image: url("../../images/border-round.png") 90 round;
 }
-.project-modal__modal__image {
+.project-modal__modal__content__header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.project-modal__modal__content__header__image {
+  display: flex;
+  flex-direction: column;
   float: left;
   margin-right: 20px;
   margin-bottom: 5px;
+}
+.project-modal__modal__content__header__image > img {
+  width: 1120px;
+  height: 628px;
+}
+.project-modal__modal__content__header__image > a {
+  margin-top: 10px;
+}
+.project-modal__modal__content__header__intro {
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+  color: white;
+  margin-bottom: 50px;
+}
+.project-modal__modal__content__body {
+  margin-bottom: 50px;
+}
+.project-modal__modal__content__body > * {
+  white-space: pre-line;
+  display: block;
+  color: white;
+  margin-bottom: 20px;
 }
 .project-modal__modal__title {
   font-size: 50px;
@@ -271,15 +318,11 @@ table {
   font-size: 25px;
   font-family: "Minecraftia", sans-serif;
   line-height: 35px;
+  letter-spacing: 2px;
 }
 .project-modal__modal > img {
   width: 40%;
   height: auto;
-}
-.project-modal__modal__text {
-  display: block;
-  color: white;
-  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
