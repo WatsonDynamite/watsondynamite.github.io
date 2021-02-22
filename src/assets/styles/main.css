@@ -302,6 +302,10 @@ table {
 .project-modal__modal__content__body {
   margin-bottom: 50px;
 }
+.project-modal__modal__content__body__image-row {
+  display: flex !important;
+  justify-content: space-evenly;
+}
 .project-modal__modal__content__body > * {
   white-space: pre-line;
   display: block;

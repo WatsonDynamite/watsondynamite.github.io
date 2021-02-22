@@ -6,6 +6,7 @@ import profilePic from '../assets/images/watson.jpg';
 import ProjectModal from '../components/ProjectModal';
 import { FragmentalCard, FragmentalContent } from "../components/pages/Fragmental";
 import {MetroidCard, MetroidContent} from "../components/pages/Metroid";
+import {MonsterCard, MonsterContent} from "../components/pages/Monster";
 
 
 function HomePage() {
@@ -53,6 +54,7 @@ function HomePage() {
             <div className="homePage__projects">
                 <div className="homePage__projects__subheader">
                     <h1>Projects</h1>
+                    <h2>(Section under constant construction!)</h2>
                 </div>
                 <div className="homePage__projects__container">
                     <ProjectModal
@@ -64,6 +66,11 @@ function HomePage() {
                         cardChildren={<MetroidCard />}
                     >
                         <MetroidContent />
+                    </ProjectModal>
+                    <ProjectModal
+                        cardChildren={<MonsterCard />}
+                    >
+                        <MonsterContent />
                     </ProjectModal>
                 </div>
             </div>

@@ -78,6 +78,12 @@
 
             &__body {
                 margin-bottom: 50px;
+
+                &__image-row {
+                    display: flex !important;
+                    justify-content: space-evenly;
+                }
+
                 > * {
                     white-space: pre-line;
                     display: block;
