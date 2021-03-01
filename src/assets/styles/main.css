@@ -241,6 +241,10 @@ table {
   flex-direction: column;
   align-items: center;
 }
+.homePage__contacts__form > h1 {
+  width: 80%;
+  text-align: left;
+}
 .homePage__contacts__form > * {
   margin-bottom: 20px !important;
 }

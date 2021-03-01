@@ -1,7 +1,7 @@
 import React, {FormEvent} from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { SiGmail, SiItchDotIo } from 'react-icons/si';
-import { TextField } from '@material-ui/core';
+import { FormLabel, TextField } from '@material-ui/core';
 import { Element, Link } from 'react-scroll';
 import emailjs from 'emailjs-com';
 
@@ -155,6 +155,7 @@ export default class HomePage extends React.Component<Props, State> {
                         <h2>Feel free to contact me!</h2>
                     </div>
                     <form className="homePage__contacts__form border" onSubmit={this.sendEmail}>
+                        <h1>To: jrld98@gmail.com</h1>
                         <TextField
                             required
                             label="Name / Company"
