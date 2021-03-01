@@ -1,0 +1,113 @@
+.MuiDialog-paper {
+    width: 90vw !important;
+    max-width: unset !important;
+}
+
+.MuiDialog-paper::-webkit-scrollbar {
+    display: none;
+}
+
+.project-modal {
+    display: flex;
+    justify-content: center;
+
+    &__card {
+        width: 250px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+        > img {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        > h3 {
+            margin-top: 5px;
+            font-size: 50px;
+        }
+    }
+
+    &__modal {
+        padding: 0 30px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 80px solid transparent;
+        border-image: url('../../images/border-round.png') 90 round;
+
+        &__content {
+
+            &__header {
+                display: flex;
+                margin-bottom: 40px;
+
+                &__image {
+                    display: flex;
+                    flex-direction: column;
+                    float: left;
+                    margin-right: 20px;
+                    margin-bottom: 5px;
+
+                    > img {
+                        width: 1120px;
+                        height: 628px;
+                    }
+
+                    > a {
+                        margin-top: 10px;
+                    }
+                }
+
+                &__intro {
+                    display: flex;
+                    align-items: center;
+                    white-space: pre-line;
+                    color: white;
+                    margin-bottom: 50px;
+                }
+            }
+
+            &__body {
+                margin-bottom: 50px;
+
+                &__image-row {
+                    display: flex !important;
+                    justify-content: space-evenly;
+                }
+
+                > * {
+                    white-space: pre-line;
+                    display: block;
+                    color: white;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 50px;
+            font-family: $font-aesymatt;
+            color: white;
+        }
+
+        > * {
+            white-space: pre-line;
+            font-size: 25px;
+            font-family: $font-minecraftia;
+            line-height: 35px;
+            letter-spacing: 2px;
+        }
+
+        > img {
+            width: 40%;
+            height: auto;
+        }
+    }
+}

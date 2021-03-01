@@ -1,3 +1,375 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+.border {
+  border: 80px solid transparent !important;
+  border-image: url("../../images/border-round.png") 90 round !important;
+}
+
+.custom-button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: "Aesymatt", sans-serif !important;
+  font-size: 40px;
+  padding: 10px;
+}
+.custom-button:hover {
+  cursor: pointer;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "SemiCoder";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Semi-Coder-Regular.otf");
+}
+@font-face {
+  font-family: "Aesymatt";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/aesymatt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fipps";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/fipps-regular-webfont.woff");
+}
+@font-face {
+  font-family: "Fipps-Filled";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/fippsfilled-regular-webfont.woff");
+}
+@font-face {
+  font-family: "Wide-Pixel";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/wide_pixel-7.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Minecraftia";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Minecraftia-Regular.ttf") format("truetype");
+}
+.homePage {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.homePage > * {
+  padding: 0 100px;
+  color: white;
+  font-family: "Aesymatt", sans-serif;
+}
+.homePage__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.homePage__banner__image > img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+.homePage__banner__image__icons {
+  display: flex;
+  justify-content: space-around;
+}
+.homePage__banner__image__icons__icon {
+  width: 50px;
+  height: 50px;
+  background-color: #003B00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.homePage__banner__image__icons__icon > a {
+  color: white;
+}
+.homePage__banner__image__icons__icon > a > svg {
+  width: 30px;
+  height: 30px;
+}
+.homePage__banner__content__buttons {
+  margin-top: 30px;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.homePage__banner__content__titles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-family: "Aesymatt", sans-serif;
+}
+.homePage__banner__content__titles > * {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.homePage__banner__content__titles > h1 {
+  color: #003B00;
+}
+.homePage__banner__content__titles > h2 {
+  font-size: 50px;
+  margin-left: 40px;
+  margin-bottom: 23px;
+}
+.homePage__banner__content__aboutme {
+  padding-right: 80px;
+}
+.homePage__banner__content__aboutme > h4 {
+  font-size: 22px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  white-space: pre-line;
+  font-family: "Aesymatt", sans-serif;
+  font-weight: lighter;
+}
+.homePage__projects {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(100vw - 80px);
+  padding: 40px;
+  align-items: center;
+}
+.homePage__projects__container {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.homePage__subheader {
+  width: 95vw;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003B00;
+  color: white;
+  margin-bottom: 20px;
+}
+.homePage__subheader > * {
+  width: 100%;
+  font-family: "Wide-Pixel", sans-serif;
+  letter-spacing: 1px;
+}
+.homePage__subheader > h1 {
+  font-size: 50px;
+}
+.homePage__subheader > h4 {
+  margin-bottom: 15px;
+}
+.homePage__contacts {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage__contacts__form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage__contacts__form > h1 {
+  width: 80%;
+  text-align: left;
+}
+.homePage__contacts__form > * {
+  margin-bottom: 20px !important;
+}
+.homePage__contacts__form > * > * {
+  color: white !important;
+  font-family: "Aesymatt", sans-serif !important;
+  font-size: 1.2em !important;
+}
+.homePage__contacts__form > p {
+  color: green;
+  font-size: 2rem;
+}
+.homePage__contacts__form__input {
+  width: 800px;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset {
+  border-color: white !important;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset > :hover {
+  border-color: white !important;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset > Mui-focused {
+  border-color: #00FF41 !important;
+}
+.homePage__footer {
+  width: 100%;
+  padding: 15px 0 15px 50px;
+  background-color: #003B00;
+  font-size: 30px;
+}
+
+.MuiDialog-paper {
+  width: 90vw !important;
+  max-width: unset !important;
+}
+
+.MuiDialog-paper::-webkit-scrollbar {
+  display: none;
+}
+
+.project-modal {
+  display: flex;
+  justify-content: center;
+}
+.project-modal__card {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.project-modal__card > img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+.project-modal__card > h3 {
+  margin-top: 5px;
+  font-size: 50px;
+}
+.project-modal__modal {
+  padding: 0 30px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 80px solid transparent;
+  border-image: url("../../images/border-round.png") 90 round;
+}
+.project-modal__modal__content__header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.project-modal__modal__content__header__image {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.project-modal__modal__content__header__image > img {
+  width: 1120px;
+  height: 628px;
+}
+.project-modal__modal__content__header__image > a {
+  margin-top: 10px;
+}
+.project-modal__modal__content__header__intro {
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+  color: white;
+  margin-bottom: 50px;
+}
+.project-modal__modal__content__body {
+  margin-bottom: 50px;
+}
+.project-modal__modal__content__body__image-row {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+.project-modal__modal__content__body > * {
+  white-space: pre-line;
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+}
+.project-modal__modal__title {
+  font-size: 50px;
+  font-family: "Aesymatt", sans-serif;
+  color: white;
+}
+.project-modal__modal > * {
+  white-space: pre-line;
+  font-size: 25px;
+  font-family: "Minecraftia", sans-serif;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+.project-modal__modal > img {
+  width: 40%;
+  height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

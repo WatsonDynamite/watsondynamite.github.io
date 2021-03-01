@@ -1,0 +1,202 @@
+.homePage {
+    background-color: $color-black-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+    > * {
+        padding: 0 100px;
+        color: white;
+        font-family: $font-aesymatt;
+    }
+
+    &__banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 80px;
+        padding-top: 80px;
+
+        &__image {
+            > img {
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                margin-bottom: 100px;
+            }
+
+            &__icons {
+                display: flex;
+                justify-content: space-around;
+
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    background-color: $color-green-main;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 2px;
+
+                    > a {
+                        color: white;
+
+                        > svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &__content {
+
+            &__buttons {
+                margin-top: 30px;
+                width: 30%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            &__titles {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                font-family: $font-aesymatt;
+
+                > * {
+                    color: white;
+                    font-size: 80px;
+                    margin-bottom: 20px;
+                }
+
+                > h1 {
+                    color: $color-green-main;
+                }
+
+                > h2 {
+                    font-size: 50px;
+                    margin-left: 40px;
+                    margin-bottom: 23px;
+                }
+            }
+
+            &__aboutme {
+                padding-right: 80px;
+
+                > h4 {
+                    font-size: 22px;
+                    margin-left: 20px;
+                    margin-bottom: 5px;
+                    white-space: pre-line;
+                    font-family: $font-aesymatt;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+
+    &__projects {
+        background-color: $color-black-main;
+        display: flex;
+        flex-direction:  column;
+        justify-content: flex-start;
+        width: calc(100vw - 80px);
+        padding: 40px;
+        align-items: center;
+
+        &__container {
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    }
+
+    &__subheader {
+        width: 95vw;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-green-main;
+        color: white;
+        margin-bottom: 20px;
+
+        > * {
+            width: 100%;
+            font-family: $font-wide-pixel;
+            letter-spacing: 1px;
+        }
+
+        > h1 {
+            font-size: 50px;
+        }
+
+        > h4 {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__contacts {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__form {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > h1 {
+                width: 80%;
+                text-align: left;
+            }
+
+            > * {
+                margin-bottom: 20px !important;
+
+                > * {
+                    color: white !important;
+                    font-family: $font-aesymatt !important;
+                    font-size: 1.2em !important;
+                }
+            }
+
+            > p {
+                color: green;
+                font-size: 2rem;
+            }
+
+            &__input {
+                width: 800px;
+
+                .MuiOutlinedInput-root, {
+                    > fieldset {
+                        border-color: white !important;
+
+                        >:hover {
+                            border-color: white !important;
+                        }
+
+                        > Mui-focused {
+                            border-color: #00FF41 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        width: 100%;
+        padding: 15px 0 15px 50px;
+        background-color: $color-green-main;
+        font-size: 30px;
+    }
+}
