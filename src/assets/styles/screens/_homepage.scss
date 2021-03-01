@@ -17,8 +17,6 @@
         align-items: center;
         padding-bottom: 80px;
         padding-top: 80px;
-        border: 80px solid transparent;
-        border-image: url('../../images/border-round.png') 90 round;
 
         &__image {
             > img {
@@ -55,6 +53,14 @@
         }
 
         &__content {
+
+            &__buttons {
+                margin-top: 30px;
+                width: 30%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
             &__titles {
                 width: 100%;
                 display: flex;
@@ -108,60 +114,84 @@
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
         }
+    }
 
-        &__subheader {
-            width: 95vw;
-            padding: 10px 30px;
+    &__subheader {
+        width: 95vw;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-green-main;
+        color: white;
+        margin-bottom: 20px;
+
+        > * {
+            width: 100%;
+            font-family: $font-wide-pixel;
+            letter-spacing: 1px;
+        }
+
+        > h1 {
+            font-size: 50px;
+        }
+
+        > h4 {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__contacts {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__form {
+            width: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: $color-green-main;
-            color: white;
-            margin-bottom: 20px;
 
             > * {
-                width: 100%;
-                font-family: $font-wide-pixel;
-                letter-spacing: 1px;
+                margin-bottom: 20px !important;
+
+                > * {
+                    color: white !important;
+                    font-family: $font-aesymatt !important;
+                    font-size: 1.2em !important;
+                }
             }
 
-            > h1 {
-                font-size: 50px;
+            > p {
+                color: green;
+                font-size: 2rem;
             }
 
-            > h4 {
-                margin-bottom: 15px;
-            }
+            &__input {
+                width: 800px;
 
-            > ul {
-                width: 90%;
-                display: flex;
-                justify-content: space-around;
-                margin-bottom: 20px;
-                font-family: $font-aesymatt;
+                .MuiOutlinedInput-root, {
+                    > fieldset {
+                        border-color: white !important;
 
-                > li {
-                    display: flex;
-                    align-items: center;
+                        >:hover {
+                            border-color: white !important;
+                        }
 
-                    > svg {
-                        margin-right: 10px;
-                        margin-bottom: 0;
-                        height: 18px;
-                        width: 18px;
-                    }
-
-                    > span {
-                        > a {
-                            color: white;
-
-                            &:hover {
-                                color: white;
-                            }
+                        > Mui-focused {
+                            border-color: #00FF41 !important;
                         }
                     }
                 }
             }
         }
+    }
+
+    &__footer {
+        width: 100%;
+        padding: 15px 0 15px 50px;
+        background-color: $color-green-main;
+        font-size: 30px;
     }
 }

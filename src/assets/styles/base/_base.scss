@@ -5,3 +5,22 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.border {
+    border: 80px solid transparent !important;
+    border-image: url('../../images/border-round.png') 90 round !important;
+}
+
+.custom-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: $font-aesymatt !important;
+    font-size: 40px;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

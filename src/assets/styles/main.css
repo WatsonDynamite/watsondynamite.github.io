@@ -6,6 +6,24 @@ body {
   padding: 0;
 }
 
+.border {
+  border: 80px solid transparent !important;
+  border-image: url("../../images/border-round.png") 90 round !important;
+}
+
+.custom-button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: "Aesymatt", sans-serif !important;
+  font-size: 40px;
+  padding: 10px;
+}
+.custom-button:hover {
+  cursor: pointer;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -112,8 +130,6 @@ table {
   align-items: center;
   padding-bottom: 80px;
   padding-top: 80px;
-  border: 80px solid transparent;
-  border-image: url("../../images/border-round.png") 90 round;
 }
 .homePage__banner__image > img {
   width: 400px;
@@ -140,6 +156,12 @@ table {
 .homePage__banner__image__icons__icon > a > svg {
   width: 30px;
   height: 30px;
+}
+.homePage__banner__content__buttons {
+  margin-top: 30px;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .homePage__banner__content__titles {
   width: 100%;
@@ -186,7 +208,7 @@ table {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
-.homePage__projects__subheader {
+.homePage__subheader {
   width: 95vw;
   padding: 10px 30px;
   display: flex;
@@ -196,39 +218,58 @@ table {
   color: white;
   margin-bottom: 20px;
 }
-.homePage__projects__subheader > * {
+.homePage__subheader > * {
   width: 100%;
   font-family: "Wide-Pixel", sans-serif;
   letter-spacing: 1px;
 }
-.homePage__projects__subheader > h1 {
+.homePage__subheader > h1 {
   font-size: 50px;
 }
-.homePage__projects__subheader > h4 {
+.homePage__subheader > h4 {
   margin-bottom: 15px;
 }
-.homePage__projects__subheader > ul {
-  width: 90%;
+.homePage__contacts {
+  height: 900px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  font-family: "Aesymatt", sans-serif;
-}
-.homePage__projects__subheader > ul > li {
-  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.homePage__projects__subheader > ul > li > svg {
-  margin-right: 10px;
-  margin-bottom: 0;
-  height: 18px;
-  width: 18px;
+.homePage__contacts__form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.homePage__projects__subheader > ul > li > span > a {
-  color: white;
+.homePage__contacts__form > * {
+  margin-bottom: 20px !important;
 }
-.homePage__projects__subheader > ul > li > span > a:hover {
-  color: white;
+.homePage__contacts__form > * > * {
+  color: white !important;
+  font-family: "Aesymatt", sans-serif !important;
+  font-size: 1.2em !important;
+}
+.homePage__contacts__form > p {
+  color: green;
+  font-size: 2rem;
+}
+.homePage__contacts__form__input {
+  width: 800px;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset {
+  border-color: white !important;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset > :hover {
+  border-color: white !important;
+}
+.homePage__contacts__form__input .MuiOutlinedInput-root > fieldset > Mui-focused {
+  border-color: #00FF41 !important;
+}
+.homePage__footer {
+  width: 100%;
+  padding: 15px 0 15px 50px;
+  background-color: #003B00;
+  font-size: 30px;
 }
 
 .MuiDialog-paper {
@@ -251,8 +292,6 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 80px solid transparent;
-  border-image: url("../../images/border-round.png") 90 round;
   cursor: pointer;
   margin-bottom: 30px;
 }

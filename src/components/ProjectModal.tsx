@@ -30,7 +30,7 @@ export default class ProjectModal extends React.Component<props, state> {
 
         return (
             <div className="project-modal">
-                <div className="project-modal__card" onClick={this.modalToggle}>
+                <div className="project-modal__card border" onClick={this.modalToggle}>
                     { cardChildren }
                 </div>
                 <Dialog
